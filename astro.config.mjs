@@ -8,15 +8,13 @@ import mdx from '@astrojs/mdx';
 export default defineConfig({
   integrations: [mdx()],
   vite: {
+    server: {
+      host: true, // Bind to 0.0.0.0 (not just localhost)
+      port: 4321,
+    },
     preview: {
       allowedHosts: ['tregalloway.com', 'https://tregalloway.com', 'localhost']  // Allow both domains
-    }
-  },
-  server: {
-    host: true, // Bind to 0.0.0.0 (not just localhost)
-    port: 4321,
-  },
-  vite: {
+    },
     plugins: [tailwindcss()]
   }
 });
