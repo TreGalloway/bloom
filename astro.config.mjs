@@ -1,20 +1,28 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
+// astro.config.mjs
+import { defineConfig } from "astro/config";
+import mdx from "@astrojs/mdx";
+import tailwindcss from "@tailwindcss/vite";
 
-import tailwindcss from '@tailwindcss/vite';
-import mdx from '@astrojs/mdx';
-
-// https://astro.build/config
 export default defineConfig({
   integrations: [mdx()],
+
+  // Astro dev server settings (optional, but nice to keep consistent)
+  server: {
+    host: true,
+    port: 4321,
+  },
+
+  // Astro preview server settings (THIS is what `astro preview` uses)
+  preview: {
+    host: true,
+    port: 4321,
+  },
+
+  // Vite settings (this is where allowedHosts belongs)
   vite: {
-    server: {
-      host: true, // Bind to 0.0.0.0 (not just localhost)
-      port: 4321,
-    },
+    plugins: [tailwindcss()],
     preview: {
-      allowedHosts: ['tregalloway.com', 'https://tregalloway.com', 'localhost']  // Allow both domains
+      allowedHosts: ["tregalloway.com", "localhost"],
     },
-    plugins: [tailwindcss()]
-  }
+  },
 });
