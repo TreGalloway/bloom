@@ -95,21 +95,19 @@ export interface SiteConfig {
  * Update these values to customize your portfolio
  */
 export const siteConfig: SiteConfig = {
-  name: "🌻 Bloomfolio",
-  title: "Astro Portfolio Template built with 🌼 DaisyUI",
+  name: "🧙🏾‍♂️Tre' Galloway",
+  title: "Professional Tinkerer🪛",
   description:
-    "A modern, responsive, and customizable portfolio template built with Astro and DaisyUI. Perfect for developers, designers, and creatives to showcase their work and skills.",
+    "I'm a overly curious man with a passion for learning and creating. I'm currently learning: Azure, AI, Electronics, IoT.",
   avatar: "../assets/bloomfolio.png",
-  location: "🇧🇷 Brazil",
-  email: "hello@example.com",
+  location: "Louisiana",
+  email: "tre@tregalloway.com",
   socialLinks: {
-    github: "https://github.com/lauroguedes",
-    linkedin: "https://linkedin.com/in/lauroguedes",
-    twitter: "https://twitter.com/leowg",
-    bluesky: "https://bsky.app/profile/lauroguedes.bsky.social",
-    instagram: "https://instagram.com/lauroguedes.dev",
-    youTube: "https://youtube.com/leowgweb",
-    codetips: "https://codetips.cloud/u/lauroguedes",
+    github: "https://github.com/TreGalloway",
+    linkedin: "https://linkedin.com/in/tregalloway",
+    twitter: "https://twitter.com/bytregalloway",
+    bluesky: "https://bsky.app/profile/tregalloway.bsky.social",
+    youTube: "https://youtube.com/@tregalloway",
   },
   enableThemeSelector: true,
   extraLinks: {
@@ -131,7 +129,7 @@ export const siteConfig: SiteConfig = {
         label: "Markdown Guide",
       },
       {
-        link: "https://github.com/lauroguedes/bloomfolio",
+        link: "https://github.com/TreGalloway/bloom",
         icon: CodeXml,
         label: "GitHub Repo",
       },
