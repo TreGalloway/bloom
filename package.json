@@ -6,10 +6,12 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview --host 0.0.0.0 --port 4321",
-    "astro": "astro"
+    "astro": "astro",
+    "start": "node ./dist/server/entry.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.9",
+    "@astrojs/node": "^9.5.1",
     "@lucide/astro": "^0.552.0",
     "@tailwindcss/vite": "^4.1.16",
     "astro": "^5.15.2",

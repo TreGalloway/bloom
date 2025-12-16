@@ -3,6 +3,8 @@ import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import tailwindcss from "@tailwindcss/vite";
 
+import node from "@astrojs/node";
+
 export default defineConfig({
   integrations: [mdx()],
 
@@ -25,4 +27,8 @@ export default defineConfig({
       allowedHosts: ["tregalloway.com", "localhost"],
     },
   },
+
+  adapter: node({
+    mode: "standalone",
+  }),
 });
