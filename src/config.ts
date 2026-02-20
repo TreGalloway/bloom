@@ -96,9 +96,9 @@ export interface SiteConfig {
  */
 export const siteConfig: SiteConfig = {
   name: "🧙🏾‍♂️Tre' Galloway",
-  title: "Professional Tinkerer🪛",
+  title: "Network and  Backend Engineering",
   description:
-    "I'm a overly curious man with a passion for learning and creating. I'm currently learning: Azure, AI, Electronics, IoT.",
+    "I'm a overly curious man with a passion for learning and creating. I'm currently learning: Rust🦀, Golang🦫, Netowrking🌐 and Embedded Systems🔌.",
   avatar: "../assets/bloomfolio.png",
   location: "Louisiana",
   email: "tre@tregalloway.com",
